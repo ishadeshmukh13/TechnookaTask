@@ -5,7 +5,7 @@ import BusinessIcon from '@mui/icons-material/Business';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 
 const SideBar = () => {
-    const [menuData, setMenuData] = useState([
+    let menuData=[
         {
             id: 1,
             name: "Dashboard",
@@ -18,8 +18,8 @@ const SideBar = () => {
             active: true,
             icon: <BusinessIcon />
         }
-    ])
-
+    ]
+   
     return (
         <Box style={webStyle.boxStyle}>
             {
